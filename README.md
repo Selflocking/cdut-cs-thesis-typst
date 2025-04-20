@@ -1,5 +1,9 @@
 # 成都理工大学计算机类本科毕业论文模板
 
+## 使用
+
+Typst 版本 0.13.0 以上。
+
 ## 字体
 
 中文使用黑体和宋体，英文使用 Times New Roman。
@@ -19,4 +23,4 @@ fonts 目录下有 simhei(黑体)和 simsun(宋体)的 ttf 文件，但是只有
 
 ## License
 
-MIT License
+[MIT License](./LICENSE)
