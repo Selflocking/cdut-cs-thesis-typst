@@ -115,3 +115,29 @@
 === XXX
 
 本论文主要研究了XXX问题，提出了一种新的解决方案。通过实验验证了该方案的有效性和可行性。
+
+// 结论
+#pagebreak()
+#heading(numbering: none)[结论]
+
+#lorem(50)
+
+// 致谢
+#pagebreak()
+#heading(numbering: none)[致谢]
+
+#lorem(50)
+
+#pagebreak()
+// 以下正文使用五号宋体
+#set text(font: ziti.songti,size: zihao.wuhao)
+// 参考文献
+#heading(numbering: none)[参考文献]
+
+#lorem(50)
+
+// 附录
+#pagebreak()
+#heading(numbering: none)[附录]
+
+#lorem(50)
