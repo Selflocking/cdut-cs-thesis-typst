@@ -80,6 +80,7 @@
   show heading.where(level: 1): it => [
     #set align(center)
     #set text(font: ziti.heiti, size: zihao.xiaoer, weight: "bold")
+    #pagebreak(weak: true)
     #it
   ]
   // 二级标题
