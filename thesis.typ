@@ -1,4 +1,5 @@
 #import "template/template.typ": *
+#import "@preview/numbly:0.1.0": numbly
 
 // 题目
 #let title = "论文标题"
@@ -66,20 +67,51 @@
 #counter(page).update(1)
 
 #let cheader = "成都理工大学2025届学士学位论文（设计）"
-// 页眉
-#set page(header: [
+// 页眉页脚
+#set page(
+  header: [
   #set align(center)
   #set text(font: ziti.songti,size: zihao.xiaowu)
   #cheader
   // 下划线
   #v(-0.8em)
   #line(length: 100%)
-]
-, numbering: "1"
+],
+  numbering: "1"
 )
+
+// 设置标题格式
+#set heading(numbering: numbly(
+  "第{1}章",
+  "{1}.{2}",
+  "{1}.{2}.{3}"
+))
+
+// 一级标题
+#show heading.where(level: 1): it => [
+  #set align(center)
+  #set text(font: ziti.heiti, size: zihao.xiaoer, weight: "bold")
+  #it
+]
+// 二级标题
+#show heading.where(level: 2): it => [
+  #set text(font: ziti.heiti, size: zihao.xiaosan, weight: "bold")
+  #it
+]
+// 三级标题
+#show heading.where(level: 1): it => [
+  #set text(font: ziti.heiti, size: zihao.xiaosi, weight: "bold")
+  #it
+]
+
+// 正文
+#set text(font: ziti.songti, size: zihao.xiaosi)
 
 = XXX
 
 == XXX
+本论文主要研究了XXX问题，提出了一种新的解决方案。通过实验验证了该方案的有效性和可行性。
 
 === XXX
+
+本论文主要研究了XXX问题，提出了一种新的解决方案。通过实验验证了该方案的有效性和可行性。
