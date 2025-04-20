@@ -18,14 +18,16 @@
   xiaoqi: 5pt,
 )
 
+#let timenewroman = (name: "Times New Roman", covers: "latin-in-cjk")
+
 #let noto = (
-  songti: ("Times New Roman","Noto Serif CJK SC", "Noto Serif", "SimSun"),
-  heiti: ("Times New Roman","Noto Sans CJK SC", "Noto Sans", "SimHei"),
+  songti: (timenewroman,"Noto Serif CJK SC", "Noto Serif", "SimSun"),
+  heiti: (timenewroman,"Noto Sans CJK SC", "Noto Sans", "SimHei"),
 )
 
 #let source = (
-  songti: ("Times New Roman","Source Han Serif SC", "Source Han Serif", "SimSun"),
-  heiti: ("Times New Roman","Source Han Sans SC", "Source Han Sans", "SimHei"),
+  songti: (timenewroman,"Source Han Serif SC", "Source Han Serif", "SimSun"),
+  heiti: (timenewroman,"Source Han Sans SC", "Source Han Sans", "SimHei"),
 )
 
 #let ziti = noto
