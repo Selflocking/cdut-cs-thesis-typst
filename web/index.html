@@ -13,8 +13,8 @@
     ></iframe>
   </body>
   <script>
-    const currentDomain = window.location.origin; // 自动获取当前域名
-    const pdfUrl = `${currentDomain}/thesis.pdf`;
+    const baseurl = window.location.href.replace("/index.html", "");
+    const pdfUrl = `${baseurl}/thesis.pdf`;
     document.getElementById(
       "pdfFrame"
     ).src = `https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(
