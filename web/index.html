@@ -6,10 +6,19 @@
 
   <body style="margin: 0">
     <iframe
-      src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://selflocking.github.io/cdut-cs-thesis-typst/thesis.pdf"
+      id="pdfFrame"
       width="100%"
       height="100%"
       style="height: 100vh; border: 0"
     ></iframe>
   </body>
+  <script>
+    const currentDomain = window.location.origin; // 自动获取当前域名
+    const pdfUrl = `${currentDomain}/thesis.pdf`;
+    document.getElementById(
+      "pdfFrame"
+    ).src = `https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(
+      pdfUrl
+    )}`;
+  </script>
 </html>

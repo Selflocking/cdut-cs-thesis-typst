@@ -4,6 +4,8 @@
 
 Typst 版本 0.13.0 以上。
 
+编辑`contents`目录下的文件即可。
+
 ## 字体
 
 中文使用黑体和宋体，英文使用 Times New Roman。

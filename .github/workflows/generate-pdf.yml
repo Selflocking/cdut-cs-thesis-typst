@@ -2,10 +2,10 @@ name: Generate PDF
 on:
   workflow_dispatch:
   push:
-    # branches:
-    #   - master
-    paths:
-      - "**.typ"
+    branches:
+      - master
+    # paths:
+    #   - "**.typ"
 
 permissions:
   contents: read
