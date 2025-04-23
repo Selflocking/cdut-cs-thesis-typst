@@ -38,6 +38,11 @@ jobs:
       - name: Move PDF 📁
         run: mv thesis.pdf web/thesis.pdf
 
+      - name: Convert PDF to Docx 📄
+        run: |
+          cd tools
+          python3 convert.py ../web/thesis.pdf
+
       - name: Upload artifact 📤
         uses: actions/upload-pages-artifact@v3
         with:
